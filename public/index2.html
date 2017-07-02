@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Udemy 3</title>
+    <style>
+
+    #parent { background: gainsboro;  display: flex;
+    flex-flow: row nowrap;}
+
+    /*default is row*/
+    /* column as if inline elements*/
+    /* reverse the order of the elements column-reverse*/
+    /* row-reverse  all*/
+    /* oveflow */
+    /*flex wrap instead of accordion-- using value of wrap-- force onto additional lines  */
+    /* flex-start group starting pointing at left hand side default*/
+    /* first element is pushed to first point space between. equally spaced between in container*/
+    /*space around gets space at the end. child margins act above and below*/
+
+
+    .child { height:100px; }
+    .childnested {flex-grow: 1;}
+
+    .child1 {background: skyblue; flex:1 1 300px; display: flex; flex-flow: nowrap; order:3;}
+    .child2 {background: powderblue; flex:10 5 300px; display:
+      flex; flex-flow: nowrap;order:1;}
+    .child3 {background: cadetblue; flex:1 1 300px; display: flex; flex-flow: nowrap;order:2;}
+
+    .child4 {background: indianred; order: 6;}
+    .child5 {background: salmon;order: 5;}
+    .child6 {background: firebrick;order: ;}
+    .child7 {background: yellowgreen;order: 3;}
+    .child8 {background: olivedrab; order: ;}
+    .child9 {background: olive; order: ;}
+
+    </style>
+
+    <link rel="stylesheet" href="/screen.css">
+
+  </head>
+  <body>
+  <div id='parent'>
+    <div class='child child1'>
+      <div class='child childnested child4'>4</div>
+      <div class='child childnested child5'>5</div>
+      <div class='child childnested child6'>6</div>
+    </div>
+
+    <div class='child child2'>
+      Text
+    </div>
+
+    <div class='child child3'>
+      <div class='child childnested child7'>7</div>
+      <div class='child childnested child8'>8</div>
+      <div class='child childnested child9'>9</div>
+    </div>
+  </div>
+  </body>
+</html>

@@ -3,10 +3,26 @@
   <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Udemy 3</title>
-    <link rel="stylesheet" href="/screen.css">
-  </head>
+    <title>Udemy 4</title>
+    <style>
+
+
+#parent{ display: flex; flex-flow: column;}
+.parent2{display: flex; flex-flow: row nowrap; height:100%;}
+.child1 {background: green; flex-grow: 1;; }
+.child2{background: skyblue; flex-grow: 1;}
+.child3{background: olive;flex-grow: 1;}
+body {margin:0;}
+</style>
+
+</head>
   <body>
-    <h1>Hello, World!</h1>
-  </body>
+<!-- <div id='parent'/> -->
+  <div class="parent2" />
+    <div class='child1'>child1 </div>
+    <div class='child2'>child2 </div>
+    <div class='child3'>child3 </div>
+  </div>
+<!-- </div> -->
+</body>
 </html>
